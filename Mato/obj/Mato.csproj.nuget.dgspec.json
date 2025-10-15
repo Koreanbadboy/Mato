@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Giang\\RiderProjects\\Mato\\Mato\\Mato.csproj": {}
+    "C:\\Users\\filip\\Desktop\\MatoAPp\\Mato\\Mato.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Giang\\RiderProjects\\Mato\\Mato\\Mato.csproj": {
+    "C:\\Users\\filip\\Desktop\\MatoAPp\\Mato\\Mato.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Giang\\RiderProjects\\Mato\\Mato\\Mato.csproj",
+        "projectUniqueName": "C:\\Users\\filip\\Desktop\\MatoAPp\\Mato\\Mato.csproj",
         "projectName": "Mato",
-        "projectPath": "C:\\Users\\Giang\\RiderProjects\\Mato\\Mato\\Mato.csproj",
-        "packagesPath": "C:\\Users\\Giang\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Giang\\RiderProjects\\Mato\\Mato\\obj\\",
+        "projectPath": "C:\\Users\\filip\\Desktop\\MatoAPp\\Mato\\Mato.csproj",
+        "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\filip\\Desktop\\MatoAPp\\Mato\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Giang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\filip\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -61,13 +62,13 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.19, )",
+              "version": "[8.0.21, )",
               "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.19, )",
+              "version": "[10.0.0-rc.2.25502.107, )",
               "autoReferenced": true
             }
           },
@@ -85,7 +86,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[8.0.19, 8.0.19]"
+              "version": "[8.0.21, 8.0.21]"
             }
           ],
           "frameworkReferences": {
@@ -93,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100-rc.2.25502.107/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
