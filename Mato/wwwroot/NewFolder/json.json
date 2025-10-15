@@ -1,0 +1,15 @@
+{
+    "window.foodStorage" "=",
+    {
+        "saveProducts": "function",
+        "(json)" {
+            "localStorage.setItem(\"foodProducts\"",
+            "json);"
+        },
+        "loadProducts": "function",
+        "()" {
+            "return" "localStorage.getItem(\"foodProducts\");"
+        }
+    }
+    ";",
+}

@@ -1,0 +1,37 @@
+﻿@page "/addfoodproduct"
+@inject IFoodProductService foodProductService
+
+<h3>AddFoodProduct</h3>
+
+<EditForm Model="@newProduct" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <InputText @bind-Value="newProduct.Name" placeholder="Produktnamn" />
+    <InputText @bind-Value="newProduct.Category" placeholder="Kategori" />
+    <InputNumber @bind-Value="newProduct.Price" />
+    <InputText @bind-Value="newProduct.Unit" placeholder="Enhet (kg, st, l)" />
+    <InputCheckbox @bind-Value="newProduct.IsOrganic" /> Ekologisk
+
+    <button type="submit">Lägg till</button>
+</EditForm>
+
+@code {
+    private FoodProduct newProduct = new();
+
+    private async Task HandleValidSubmit()
+    {
+        await foodProductService.AddAsync(newProduct);
+        newProduct = new(); // Reset form
+    }
+
+    private async Task AddProductAsync()
+    {
+        var newProduct = new FoodProduct
+        {
+            // Initialize properties...
+        };
+
+        await foodProductService.AddAsync(newProduct);
+    }
+}
