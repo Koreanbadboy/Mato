@@ -1,0 +1,31 @@
+﻿@page "/food"
+@inject IFoodService FoodService
+<h3>FoodCart</h3>
+
+<input @bind ="newFoodName" placeholder="Name"/>
+<button @onclick="AddFood">Add</button>
+
+<ul>
+	@foreach(var food in foods)
+	{
+		<li>@food.GetDescription()</li>
+	}
+</ul>
+
+@code {
+
+	private string newFoodName = string.Empty;
+	private List<Food> foods = new();
+
+	protected override void OnInitialized()
+	{
+		foods = FoodService.GetAll();
+	}
+
+	private void AddFood()
+	{
+		var food = new Food { Name = newFoodName };
+		FoodService.Add(food);
+		newFoodName = string.Empty;
+	}
+}
